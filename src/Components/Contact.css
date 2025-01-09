@@ -1,0 +1,208 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.left h1 {
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(270deg, rgb(133, 7, 165) 80%, rgb(245, 53, 85) 103%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.left p {
+    max-width: 550px;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.detail p {
+    font-size: 25px;
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.right label {
+    color: rgb(245, 245, 240);
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.right input {
+    border: none;
+    width: 50vw;
+    height: 10vh;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: rgb(65, 62, 62);
+    color: rgb(185, 185, 177);
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.right textarea {
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 3px;
+    background-color: rgb(56, 55, 55);
+    font-family: Outfit;
+    font-size: 20px;
+    color: rgb(185, 185, 177);
+}
+
+.submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgb(133, 7, 165) -5.0%, rgb(245, 53, 85) 103%);
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .main h1 {
+        font-size: 28px;
+        /* Smaller title size for mobile */
+        text-align: center;
+        /* Center align title */
+    }
+
+    .section {
+        flex-direction: column;
+        /* Stack left and right sections vertically */
+        gap: 30px;
+        /* Reduce gap between sections */
+    }
+
+    .left h1 {
+        font-size: 30px;
+        /* Smaller font for heading */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .left p {
+        font-size: 16px;
+        /* Adjust font size */
+        line-height: 25px;
+        /* Adjust line height */
+        text-align: center;
+        /* Center align paragraph */
+        max-width: 100%;
+        /* Allow full width */
+    }
+
+    .details {
+        align-items: center;
+        /* Center align details */
+        gap: 15px;
+        /* Reduce gap */
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .detail p {
+        text-align: center;
+        /* Center align contact info */
+        font-size: 18px;
+        /* Adjust font size */
+    }
+
+    .right {
+        width: 90%;
+        /* Full width for form */
+        align-items: center;
+        /* Center align the form */
+        gap: 15px;
+        /* Reduce gap */
+    }
+
+    .right label {
+        font-size: 18px;
+        /* Smaller font for labels */
+    }
+
+    .right input,
+    .right textarea {
+        width: 90%;
+        height: 5vh;
+        /* Adjust width for inputs and textarea */
+        font-size: 16px;
+        /* Adjust font size */
+        padding: 12px;
+        /* Adjust padding */
+    }
+
+    .right textarea {
+        height: 25vh;
+        /* Adjust height */
+    }
+
+    .submit {
+        width: 100%;
+        /* Full width for button */
+        font-size: 18px;
+        /* Smaller font for button */
+        padding: 10px 20px;
+        /* Adjust padding */
+    }
+}

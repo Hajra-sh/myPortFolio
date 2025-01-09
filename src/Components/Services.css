@@ -1,0 +1,126 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    border-bottom: 2px solid gray;
+    padding: 20px;
+    margin-top: 20px;
+
+
+    /* Added padding for smaller screens */
+}
+
+.main h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    animation: shadowBlink 2s infinite ease-in;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center align cards */
+    gap: 20px;
+    /* Space between cards */
+    width: 100%;
+    max-width: 1200px;
+    /* Restrict max width on large screens */
+
+    /* Center align container */
+}
+
+.format {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Three cards per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(87, 8, 63), rgb(56, 3, 56));
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.format h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.format h2 {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(233, 72, 126) 50%, rgb(184, 21, 184) 100.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.format p {
+    color: beige;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.readmore {
+    font-size: 14px;
+    color: #ff3679;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.readmore:hover {
+    color: #a73a9d;
+}
+
+.format:hover {
+    border-color: #fa29c6;
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .format {
+        flex: 1 1 calc(50% - 20px);
+        /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .format {
+        flex: 1 1 calc(100% - 20px);
+        /* Single card per row on mobile */
+    }
+
+    .main h1 {
+        font-size: 36px;
+        /* Smaller title for mobile */
+    }
+
+    .format h2 {
+        font-size: 20px;
+    }
+
+    .format h3 {
+        font-size: 16px;
+    }
+
+    .format p {
+        font-size: 14px;
+    }
+}

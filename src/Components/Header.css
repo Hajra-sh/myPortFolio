@@ -1,0 +1,135 @@
+/* Base Styles */
+.header {
+    height: 100vh;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.type {
+    font-family: monospace;
+}
+
+.header h1 span {
+    font-size: 50px;
+    color: #ff3679;
+}
+
+.header p {
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    padding: 20px;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.header-connect {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #ff3679 -5.09%, #a73a9d 106.06%);
+    cursor: pointer;
+}
+
+.header-connect:hover {
+    border: 2px solid rgb(247, 245, 246);
+}
+
+.header-resume {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.header-resume:hover {
+    border-color: #ff3679;
+}
+
+.header img {
+    height: 30vh;
+    border-radius: 100%;
+    margin-top: 30px;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(255, 54, 121, 0.5);
+    animation: blinking-shadow 2s infinite ease-in-out;
+}
+
+
+
+@keyframes blinking-shadow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px 10px rgba(255, 54, 121, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 30px 15px rgba(255, 54, 121, 0.8);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 70vh;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 2px solid gray;
+    }
+
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header h1 span {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+        padding: 40px;
+    }
+
+    .header img {
+        margin-top: 20px;
+        height: 15vh;
+    }
+
+    .header-connect,
+    .header-resume {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

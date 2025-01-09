@@ -1,0 +1,79 @@
+.footer{
+    margin: 40px 10px;
+    display: flex;
+ 
+    gap: 20px;
+
+}
+
+.footer h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(248, 49, 82) -5.03%, rgb(206, 35, 175) 100.67%);
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.tleft p{
+     font-size: 20px;
+     max-width: 400px;
+
+}
+
+.tright{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.emaili{
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: rgb(43, 42, 42);
+    padding-right: 80px;
+}
+
+.emaili input{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: aliceblue;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.tright hr{
+    flex-direction: column;
+}
+
+.bright{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+.emaili:hover{
+    border: 2px solid white;
+}
+
