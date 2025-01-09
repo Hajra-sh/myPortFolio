@@ -5,7 +5,6 @@ import Services from './Components/Services'
 import About from './Components/About'
 import MyWork from './Components/MyWork'
 import Contact from './Components/Contact'
-import './app.css'
 
 const App = () => {
 
