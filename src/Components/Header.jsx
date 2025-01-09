@@ -12,7 +12,7 @@ const Header = () => {
       <h1>
         <span >Im Hajra Shahbaz </span>
         <TypingEffect
-          text={['🚀 Perhana walee buchee', '💻 MERN Stack Developer! 😎']}
+          text={['Lets Build!', '💻 MERN Stack Developer! 😎']}
           speed={150}
           eraseDelay={1000}
           typingDelay={500}
