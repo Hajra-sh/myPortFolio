@@ -16,7 +16,7 @@
     /* Glass effect */
     box-shadow: 0 4px 12px 0 rgb(255, 0, 157);
     /* Subtle shadow */
-    backdrop-filter: blur(10px);
+    
     /* Glass blur effect */
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     /* Subtle border */

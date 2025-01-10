@@ -96,7 +96,7 @@
 @media (max-width: 480px) {
 
     .header {
-        height: 70vh;
+        height: 85vh;
         display: flex;
         margin-top: 20px;
         align-items: center;
@@ -118,7 +118,7 @@
     }
 
     .header p {
-        font-size: 15px;
+        font-size: 12px;
         padding: 20px;
     }
 
